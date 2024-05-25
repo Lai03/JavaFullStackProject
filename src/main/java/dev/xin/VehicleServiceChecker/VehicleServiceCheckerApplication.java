@@ -1,4 +1,4 @@
-package dev.xin.UltraboostPriceChecker;
+package dev.xin.VehicleServiceChecker;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,12 +6,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UltraboostPriceCheckerApplication {
+public class VehicleServiceCheckerApplication {
 
-	private static final Logger log = LoggerFactory.getLogger(UltraboostPriceCheckerApplication.class);
+	private static final Logger log = LoggerFactory.getLogger(VehicleServiceCheckerApplication.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(UltraboostPriceCheckerApplication.class, args);
+		SpringApplication.run(VehicleServiceCheckerApplication.class, args);
 		log.info("Application started Successfully!");
 	}
 
