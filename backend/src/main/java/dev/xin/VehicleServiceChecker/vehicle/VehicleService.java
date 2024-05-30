@@ -8,8 +8,12 @@ import java.util.Optional;
 
 @Service
 public class VehicleService {
-    @Autowired
+    //field injectction with @Autowired is not reocommended
     private VehicleRepository vehicleRepository;
+
+    public VehicleService (VehicleRepository vehicleRepository){
+        this.vehicleRepository = vehicleRepository;
+    }
 
     public Vehicle saveVehicle(Vehicle vehicle) {
         return vehicleRepository.save(vehicle);
